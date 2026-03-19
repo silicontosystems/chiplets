@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\chiplets\rapidchiplet\reproduce_paper_results.py", line 56, in <module>
+    reproduce_paper_results()
+  File "D:\chiplets\rapidchiplet\reproduce_paper_results.py", line 47, in reproduce_paper_results
+    cpp.create_evaluation_plot()
+  File "D:\chiplets\rapidchiplet\create_paper_plots.py", line 110, in create_evaluation_plot
+    ax[i][j].set_ylim(limit[0], limit[1])
+  File "C:\Users\ant1kor\.conda\envs\rapidchiplet\Lib\site-packages\matplotlib\axes\_base.py", line 4062, in set_ylim
+    return self.yaxis._set_lim(bottom, top, emit=emit, auto=auto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ant1kor\.conda\envs\rapidchiplet\Lib\site-packages\matplotlib\axis.py", line 1216, in _set_lim
+    v0 = self.axes._validate_converted_limits(v0, self.convert_units)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ant1kor\.conda\envs\rapidchiplet\Lib\site-packages\matplotlib\axes\_base.py", line 3749, in _validate_converted_limits
+    raise ValueError("Axis limits cannot be NaN or Inf")
+ValueError: Axis limits cannot be NaN or Inf
